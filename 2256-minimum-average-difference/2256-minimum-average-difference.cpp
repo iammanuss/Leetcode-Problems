@@ -1,6 +1,8 @@
 class Solution {
 public:
     int minimumAverageDifference(vector<int>& nums) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
         long long sum=0,pref=0,suff=0,idx,diff=INT_MAX;
         for(auto x:nums)
             sum+=x;
